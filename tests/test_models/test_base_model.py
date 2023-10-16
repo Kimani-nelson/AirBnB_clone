@@ -74,14 +74,14 @@ class TestBaseModel(unittest.TestCase):
         kwargs = {
             'id': '12234hfhdk678',
             'created_at': '2023-09-10T10:30:00.000000',
-            'name': 'Khairat',
+            'name': 'Nelson',
             'value': 98
         }
         base_mode = BaseModel(**kwargs)
 
         self.assertEqual(base_mode.id, '12234hfhdk678')
         self.assertEqual(base_mode.created_at, datetime(2023, 9, 10, 10, 30))
-        self.assertEqual(base_mode.name, 'Khairat')
+        self.assertEqual(base_mode.name, 'Nelson')
         self.assertEqual(base_mode.value, 98)
 
     def test_init_with_args(self):
@@ -93,9 +93,9 @@ class TestBaseModel(unittest.TestCase):
         """Test if invalid kwargs is passed"""
         kwargs = {
             'id': '12234hfhdk678',
-            '__class__': 'KhairatClass',
+            '__class__': 'NelsonClass',
             'created_at': '2023-09-10T10:30:00.000000',
-            'name': 'Khairat',
+            'name': 'Nelson',
         }
 
         base_mode = BaseModel(**kwargs)

@@ -5,6 +5,7 @@ This is the base model of the Airbnb clone project
 It provides a unique identifier for the instance objects
 Also handles the date the instance was created and updated
 """
+
 from datetime import datetime
 import models
 import uuid
